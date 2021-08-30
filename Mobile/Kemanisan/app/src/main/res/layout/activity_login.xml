@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <Toolbar
+        android:title=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/ic_arrow_back"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Login"/>
+    </Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_weight="1.4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/kemanisan"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtTanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_date"
+                android:drawablePadding="5dp"
+                android:text="18/11/2000"
+                android:fontFamily="@font/didact_gothic"
+                android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_gradasi"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Masuk"
+                android:layout_marginRight="0dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/form"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="15dp"
+            android:inputType="text"
+            android:fontFamily="@font/didact_gothic"
+            android:textSize="15dp"
+            android:hint="Masukkan username"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp">
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/form"
+            android:drawableStart="@drawable/ic_baseline_lock"
+            android:drawableTint="@color/black"
+            android:drawablePadding="15dp"
+            android:fontFamily="@font/didact_gothic"
+            android:inputType="textPassword"
+            android:textSize="15dp"
+            android:hint="Masukkan password anda"
+            android:paddingLeft="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_gradient_style"
+            android:textStyle="bold"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loadLogin"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saya belum punya akun"
+            android:textAlignment="center"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="#ffff" />
+        <TextView
+            android:id="@+id/Daftar"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:fontFamily="@font/didact_gothic"
+            android:text="Daftar?"
+            android:textColor="#ffff" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+

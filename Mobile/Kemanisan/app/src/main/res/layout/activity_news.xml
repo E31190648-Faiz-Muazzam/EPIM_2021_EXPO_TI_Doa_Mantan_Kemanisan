@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/tampilan_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textStyle="bold"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/tampilan_isi_berita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:fontFamily="@font/didact_gothic"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+</ScrollView>

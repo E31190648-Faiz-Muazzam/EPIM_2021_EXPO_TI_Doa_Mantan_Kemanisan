@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.faizmuazzam.kemanisan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Util.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_kemanisan_resmi"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kemanisan"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".PendingActivity"></activity>
+        <activity android:name=".DikirimActivity" />
+        <activity android:name=".DikemasActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".PaymentSuccsessActivity" />
+        <activity android:name=".BayarActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

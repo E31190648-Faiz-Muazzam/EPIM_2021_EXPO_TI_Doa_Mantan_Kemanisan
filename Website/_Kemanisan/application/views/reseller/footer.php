@@ -1,0 +1,1 @@
+<strong>Copyright &copy;<?php echo date('Y'); ?> <a target='_BLANK' href=""> Kemanisan</a>.</strong> All rights reserved.

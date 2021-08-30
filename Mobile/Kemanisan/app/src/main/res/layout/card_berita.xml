@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/sub_judul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:text="Sub Judul"
+                android:fontFamily="@font/didact_gothic"/>
+
+            <TextView
+                android:id="@+id/judul_berita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Judul Berita"
+                android:fontFamily="@font/didact_gothic"/>
+
+            <TextView
+                android:id="@+id/isi_berita"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="20dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Judul Berita"
+                android:fontFamily="@font/didact_gothic"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
